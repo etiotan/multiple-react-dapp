@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "materialize-css": "^0.98.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-notify-toast": "^0.1.5",
     "web3": "^0.18.4"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "react-sidenav": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
