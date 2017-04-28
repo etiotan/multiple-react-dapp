@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-ui": "^0.17.4",
     "materialize-css": "^0.98.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-notify-toast": "^0.1.5",
+    "react-tap-event-plugin": "^2.0.1",
     "web3": "^0.18.4"
   },
   "devDependencies": {

@@ -1,5 +1,4 @@
 import { web3, coinbase } from './connect.js'
-import {notify} from 'react-notify-toast';
 
 export const contractAddress = '0xeC2f06fCef81c913EE857a62CEa6A592e58Db241'
 
@@ -67,12 +66,12 @@ export const display = contractInstance.display.call()
 export const adder = ()=> {
     console.log(`current count is ${display[1].toNumber() + 1}, it'll update give it time`)
     contractInstance.adder({from: coinbase})
-    notify.show('Added! :)', "success", 3000);
+
 }
 
 //invoke Subtractor function costs around .0005~ Ether
 export const subtractor = ()=> {
     console.log(`current count is ${display[1].toNumber() - 1}`)
     contractInstance.subtractor({from: coinbase})
-    notify.show('Subtracted! :(', "error", 3000);
+
 }
