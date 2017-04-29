@@ -12,7 +12,7 @@ export const AddSub  = ()=> {
 
 
         return (
-            <div>
+            <div className="col s9 right">
 
                 <h1>Decentralized Counter</h1>
 
