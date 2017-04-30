@@ -36,7 +36,7 @@ export default class AddModal extends React.Component {
     return (
       <div>
         <RaisedButton
-             
+
             label="About this contract" onTouchTap={this.handleOpen} />
         <Dialog
           title="Decentralized Counter"
@@ -46,8 +46,7 @@ export default class AddModal extends React.Component {
           onRequestClose={this.handleClose}
         >
 
- <p>A completely decentralized way to increase and decrease a number, all results sent directly to the test-net block chain. You can see your Ether and transaction change in real time by visiting the <a className='blue-text' href='https://ropsten.etherscan.io/address/0xec2f06fcef81c913ee857a62cea6a592e58db241' target='_blank'>contract.</a></p>
-
+ <p>A completely decentralized way to increase and decrease a number, all results sent directly to the test-net block chain. Transaction times vary depending on how long it takes the blocks to be mined. </p>
         </Dialog>
       </div>
     );

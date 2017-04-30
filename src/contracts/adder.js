@@ -58,20 +58,21 @@ export const contractInstance = MyContract.at(contractAddress);
 //# of transactions made by account
 export const transactionCount = web3.eth.getTransactionCount(coinbase)
 //display doesnt count as a transaction as long as you call it
-export const display = contractInstance.display.call()
+export const display = contractInstance.display.call()[1].toNumber()
 
 
 
 //invoke Adder function costs around .0005~ Ether
 export const adder = ()=> {
-    console.log(`current count is ${display[1].toNumber() + 1}, it'll update give it time`)
-    contractInstance.adder({from: coinbase})
+
+    console.log(`your transaction ID is ${contractInstance.adder({from: coinbase})}`)
 
 }
 
 //invoke Subtractor function costs around .0005~ Ether
 export const subtractor = ()=> {
-    console.log(`current count is ${display[1].toNumber() - 1}`)
-    contractInstance.subtractor({from: coinbase})
+
+    console.log(`your transaction ID is ${contractInstance.subtractor({from: coinbase})}`)
+
 
 }
