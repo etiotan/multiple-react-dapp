@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import {Route, HashRouter, Redirect } from 'react-router-dom'
 import {AddSub} from './pages/AddSub';
 import SideNav from './Components/SideNav'
-import {About} from './Components/About'
-
+import {About} from './pages/About'
+import {Send} from './pages/Send'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
@@ -28,10 +28,11 @@ class MainLayout extends React.Component{
 <div className="row">
     <HashRouter>
       <div>
-        <Redirect from="/" to="about" />
+        {/* <Redirect from="/" to="about" /> */}
         <Route path="/" component={SideNavMui}  />
         <Route path='/about' component={About} />
         <Route path="/decentralized-counter" component={AddSub}/>
+        <Route path="/send" component={Send}/>
         <Route/>
       </div>
   </HashRouter>

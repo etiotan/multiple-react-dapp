@@ -47,18 +47,20 @@ export default class SideNav extends React.Component {
               onRequestChange={(open) => this.setState({open})}
             >
               <MenuItem
-
                   containerElement={<Link to="/about" />}
                   onTouchTap={this.handleClose}>
                   About
              </MenuItem>
               <MenuItem
-
                   containerElement={<Link to="/decentralized-counter" />}
                   onTouchTap={this.handleClose}>
                   Decentralized Counter
                </MenuItem>
-
+               <MenuItem
+                   containerElement={<Link to="/send" />}
+                   onTouchTap={this.handleClose}>
+                  Send
+                </MenuItem>
             </Drawer>
 
           </div>

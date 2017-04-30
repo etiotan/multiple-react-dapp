@@ -12,7 +12,6 @@ export const Information = ()=>{
 
     return(
         <div>
-
             <ul>
               <li>Hello, <span className='teal-text accent-4'>{coinbase}</span></li>
               <li>your balance is <span className='teal-text accent-4'>{balance}</span></li>
