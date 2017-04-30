@@ -43,7 +43,7 @@ All transaction details are displayed on the console.
 
 For those who do not want to install it all.
 
-[Google Drive with images](https://goo.gl/photos/UFjoKXzn7KTwiwem9)
+[All Images](./pageImages)
 
 ![Send After](./pageImages/image4.png 'Send After')
 
