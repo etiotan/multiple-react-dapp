@@ -1,8 +1,7 @@
 import React from 'react';
 import {Information} from '../contracts/connect.js'
 import * as addLogic from '../contracts/adder.js'
-import AddModal from '../Components/AddModal'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 // eventually will move address and balance to the mainlayout
 
@@ -14,10 +13,6 @@ export const AddSub = () => {
 
             <h1>Decentralized Counter</h1>
 
-            <MuiThemeProvider>
-                <AddModal/>
-            </MuiThemeProvider>
-
             <ul>
                 <Information/>
 
@@ -25,8 +20,7 @@ export const AddSub = () => {
                     <a className='blue-text' href='https://ropsten.etherscan.io/address/0xec2f06fcef81c913ee857a62cea6a592e58db241' target='_blank'> contract </a>
                     in real time.</p>
                 <blockquote>
-                    <li>Total Transactions: {addLogic.transactionCount}</li>
-                    <li>Current Count is at: {addLogic.display}</li>
+                    <h4>Current Count is at:<span className='green-text'>{addLogic.display}</span></h4>
                 </blockquote>
             </ul>
             <button className="waves-effect waves-light btn" onClick={addLogic.adder}>ADD</button>

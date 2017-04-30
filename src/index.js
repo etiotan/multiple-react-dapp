@@ -6,7 +6,8 @@ import SideNav from './Components/SideNav'
 import {About} from './pages/About'
 import {Send} from './pages/Send'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
+import injectTapEventPlugin from "react-tap-event-plugin"
+injectTapEventPlugin();
 
 
 class SideNavMui extends React.Component{

@@ -13,8 +13,9 @@ export const Information = ()=>{
     return(
         <div>
             <ul>
-              <li>Hello, <span className='teal-text accent-4'>{coinbase}</span></li>
+              <li>your address is <a className='blue-text' href={`https://ropsten.etherscan.io/address/${coinbase}`} target='_blank'>{coinbase}</a></li>
               <li>your balance is <span className='teal-text accent-4'>{balance}</span></li>
+              <li>your transaction count is <span className='red-text accent-4'>{web3.eth.getTransactionCount(coinbase)}</span></li>
             </ul>
 
         </div>

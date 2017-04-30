@@ -9,16 +9,11 @@ export const About = () => {
             <Information/>
 
             <div>
-                <p>Connecting your smart contract to a UI</p>
-                <p>The block-chain is the
-                    <a href="https://ropsten.etherscan.io/" target="_blank"> Ropsten Test Net</a></p>
+                <h4>Basic Knowledge</h4>
+                <li>Open your console and click the address to see transactions</li>
+                <li>Menu to navigate</li>
+                <li><a href='https://github.com/etiotan/multiple-react-dapp' target='_blank'>Documentation</a> for full set up and usage</li>
 
-                <ul>
-                    <li>
-                        <a href='https://github.com/etiotan/multiple-react-dapp' target='_blank'>Read Documentation</a>
-                    </li>
-
-                </ul>
                 <p>by:
                     <a className="cyan-text lighten-1" href="https://github.com/etiotan" target="_blank"> Etio Tan</a>
                 </p>

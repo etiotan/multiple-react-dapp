@@ -4,15 +4,26 @@ import {web3, coinbase } from '../contracts/connect.js'
 
 export class Send extends React.Component {
 
+constructor(){
+    super()
+    this.state= {
+        transactionInfo:"",
+        link: "",
+        showLink:""
+    }
+}
+
 handleSend(event){
     event.preventDefault();
-    var address = (this.refs.address.value)
-    var amount = (this.refs.amount.value)
+    var address = (this.refs.address.value.trim())
+    var amount = (this.refs.amount.value.trim())
 
+    var sentEther = web3.eth.sendTransaction({from: coinbase, to: address, value: web3.toWei(amount, 'ether'), gasLimit:21000, gasPrice:2000000000})
+    this.setState({transactionInfo:`You have sent ${amount} to ${address}`, link:`https://ropsten.etherscan.io/tx/${sentEther}`, showLink:"Transaction Link"})
     this.refs.address.value= ""
     this.refs.amount.value= ""
-    console.log(web3.eth.sendTransaction({from: coinbase, to: address, value: web3.toWei(amount, 'ether'), gasLimit:21000, gasPrice:2000000000}))
-    alert('Transaction Sent, View Console & wait for transaction to be mined')
+   console.log(web3.eth.getTransaction(sentEther))
+
 }
 
     render(){
@@ -38,7 +49,8 @@ handleSend(event){
             </div>
             <div className='col s7'>
             <p className="red-text">Costs {web3.fromWei("42000000000000", 'ether')} Ether to send</p>
-            <p>View your transaction getting mined <a href={`https://ropsten.etherscan.io/address/${coinbase}`} target='_blank'>here</a></p>
+            <p>{this.state.transactionInfo}</p>
+            <a href={this.state.link} target='_blank'>{this.state.showLink}</a>
         </div>
         </div>
     )
