@@ -1,18 +1,14 @@
 import Web3 from 'web3'
-
-
-
-
 import React from 'react'
 //initalizes web3
-export const web3 = new Web3(new Web3.providers.HttpProvider())
+const web3 = new Web3(new Web3.providers.HttpProvider())
 //returns current address
-export const coinbase = web3.eth.coinbase
+const coinbase = web3.eth.coinbase
 //returns balance in ether
-export const balance = web3.fromWei(web3.eth.getBalance(coinbase), 'ether').toNumber()
+const balance = web3.fromWei(web3.eth.getBalance(coinbase), 'ether').toNumber()
 
 
-export const Information = ()=>{
+const Information = ()=>{
 
     return(
         <div>
@@ -27,3 +23,5 @@ export const Information = ()=>{
 
     )
 }
+
+export {web3, coinbase, balance, Information}

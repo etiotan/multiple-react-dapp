@@ -1,8 +1,8 @@
-import { web3, coinbase } from './connect.js'
+import {web3, coinbase } from './connect.js'
 
-export const contractAddress = '0xeC2f06fCef81c913EE857a62CEa6A592e58Db241'
+const contractAddress = '0xeC2f06fCef81c913EE857a62CEa6A592e58Db241'
 
-export const abi = [
+const abi = [
 {
 "constant": true,
 "inputs": [],
@@ -52,17 +52,17 @@ export const abi = [
 
 
 //addder contract
-export const MyContract = web3.eth.contract(abi);
+const MyContract = web3.eth.contract(abi);
 // instantiate by address
-export const contractInstance = MyContract.at(contractAddress);
+const contractInstance = MyContract.at(contractAddress);
 
 //display doesnt count as a transaction as long as you call it
-export const display = contractInstance.display.call()[1].toNumber()
+const display = contractInstance.display.call()[1].toNumber()
 
 
 
 //invoke Adder function costs around .0005~ Ether
-export const adder = ()=> {
+const adder = ()=> {
 
     var added = contractInstance.adder({from: coinbase})
     console.log(web3.eth.getTransaction(added))
@@ -71,10 +71,12 @@ export const adder = ()=> {
 }
 
 //invoke Subtractor function costs around .0005~ Ether
-export const subtractor = ()=> {
+const subtractor = ()=> {
 
     var subtractor = contractInstance.subtractor({from: coinbase})
     console.log(web3.eth.getTransaction(subtractor))
     console.log(`${web3.eth.getTransaction(subtractor).nonce} is the current nonce, you can view the Object for more`)
     alert('Open your console!')
 }
+
+export {contractAddress, abi, MyContract, contractInstance, display, adder, subtractor}
