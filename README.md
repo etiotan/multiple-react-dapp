@@ -1,10 +1,10 @@
 # Multi React DApps
 
-[Ethereum]('https://github.com/ethereum/') is a very exciting piece of technology but there aren't many resources and examples demonstrating how to have your smart-contract interact with a user interface. If you are just confused on how to get web3 to work, reading the code should be enough.
+[Ethereum](https://github.com/ethereum/) is a very exciting piece of technology but there aren't many resources and examples demonstrating how to have your smart-contract interact with a user interface. If you are just confused on how to get web3 to work, reading the code should be enough.
 
 ## Prerequisites
 
-1. Have [Geth]('https://ethereum.github.io/go-ethereum/downloads/') Installed
+1. Have [Geth](https://ethereum.github.io/go-ethereum/downloads/) Installed
 2. Create account & mine a few Ethers on the Ropsten Testnet.
 
 ## Installing & Using
@@ -43,7 +43,7 @@ All transaction details are displayed on the console.
 
 For those who do not want to install it all.
 
-[Google Drive with images]('https://goo.gl/photos/UFjoKXzn7KTwiwem9')
+[Google Drive with images](https://goo.gl/photos/UFjoKXzn7KTwiwem9)
 
 ![Send After](./pageImages/image4.png 'Send After')
 
@@ -60,12 +60,12 @@ Lets you send Ether to another address.
 
 ### Built With
 
-- [Geth]('https://github.com/ethereum/go-ethereum/wiki/geth')
-- [Web3]('https://github.com/ethereum/wiki/wiki/JavaScript-API')
-- [create-react-app]('https://github.com/facebookincubator/create-react-app')
-- [react-router-dom]('https://www.npmjs.com/package/react-router-dom')
-- [Material-Ui]('http://www.material-ui.com/')
-- [Materialize-css]('http://materializecss.com/')
+- [Geth](https://github.com/ethereum/go-ethereum/wiki/geth)
+- [Web3](https://github.com/ethereum/wiki/wiki/JavaScript-API)
+- [create-react-app](https://github.com/facebookincubator/create-react-app)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [Material-Ui](http://www.material-ui.com/)
+- [Materialize-css](http://materializecss.com/)
 
 #### Future
 
