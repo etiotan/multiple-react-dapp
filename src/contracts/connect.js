@@ -1,7 +1,11 @@
 import Web3 from 'web3'
+
+
+
+
 import React from 'react'
 //initalizes web3
-export const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+export const web3 = new Web3(new Web3.providers.HttpProvider())
 //returns current address
 export const coinbase = web3.eth.coinbase
 //returns balance in ether

@@ -9,7 +9,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from "react-tap-event-plugin"
 injectTapEventPlugin();
 
-
 class SideNavMui extends React.Component{
     render(){
         return (
