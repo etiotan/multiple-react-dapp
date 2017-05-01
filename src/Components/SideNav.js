@@ -60,6 +60,11 @@ export default class SideNav extends React.Component {
                    onTouchTap={this.handleClose}>
                   Send
                 </MenuItem>
+                <MenuItem
+                    containerElement={<Link to="/etio-coins" />}
+                    onTouchTap={this.handleClose}>
+                   Etio Coins
+                 </MenuItem>
             </Drawer>
 
           </div>

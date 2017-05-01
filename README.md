@@ -45,10 +45,15 @@ For those who do not want to install it all.
 
 [All Images](./pageImages)
 
+![Send After](./pageImages/image6.png 'Send After')
 ![Send After](./pageImages/image4.png 'Send After')
 
 
 # Decentralized Apps
+
+#### Etio Coins
+
+Lets you buy/send/check balance of ERC20 standard tokens
 
 ##### Decentralized Counter
 
