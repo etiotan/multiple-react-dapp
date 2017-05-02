@@ -46,7 +46,7 @@ export default class SideNav extends React.Component {
               onRequestChange={(open) => this.setState({open})}
             >
               <MenuItem
-                  containerElement={<Link to="/about" />}
+                  containerElement={<Link to="/" />}
                   onTouchTap={this.handleClose}>
                   About
              </MenuItem>

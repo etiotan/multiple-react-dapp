@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Route, HashRouter, Redirect } from 'react-router-dom'
+import {Route, HashRouter, Redirect} from 'react-router-dom'
 import {AddSub} from './pages/AddSub';
 import SideNav from './Components/SideNav'
 import {About} from './pages/About'
@@ -29,14 +29,13 @@ class MainLayout extends React.Component{
 <div className="row">
     <HashRouter>
       <div>
-        {/* <Redirect from="/" to="about" /> */}
-        <Route path="/" component={SideNavMui}  />
-        <Route path='/about' component={About} />
-        <Route path="/decentralized-counter" component={AddSub}/>
-        <Route path="/send" component={Send}/>
-        <Route path="/etio-coins" component={EtioCoins}/>
-        <Route/>
+        <Route path="*" component={SideNavMui}  />
+        <Route exact path='/' component={About} />
+        <Route exact path="/decentralized-counter" component={AddSub}/>
+        <Route exact path="/send" component={Send}/>
+        <Route exact path="/etio-coins" component={EtioCoins}/>
       </div>
+
   </HashRouter>
 
 
